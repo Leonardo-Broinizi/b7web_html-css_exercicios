@@ -8,10 +8,24 @@
 }
 
 body {
-    background-color: hwb(180 0% 0% / 0.171);
+    background-color: hwb(244 76% 5% / 0.548);
 }
 
-main, section, img#pantera, img#no_timao {
+h2 {
+    font-family: 'Kanit';
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto';
+    padding-top: 10px;
+    font-size: 0.95em;
+}
+
+
+main, section, img#pantera {
     width: 95vw;
     margin: auto;
 }
@@ -42,24 +56,17 @@ img#bandana {
     border-radius: 15px 15px 0px 0px;
 }
 
-img#pantera {
-    margin-bottom: 15px;
-}
-
-p {
-    font-family: 'Roboto';
-    padding-top: 10px;
-    font-size: 0.95em;
-}
-
 section > p {
     line-height: 25px;
+    padding: 10px 0px;
 }
 
-h2 {
-    font-family: 'Kanit';
-    font-weight: normal;
-    font-size: 1.2em;
+section > div {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 0.85em;
+    background-color: lightgray;
+    margin: 10px 0px
 }
 
 section {
@@ -72,7 +79,28 @@ section > h2 {
     border-radius: 15px 15px 0px 0px;
 }
 
+article, img#no_timao {
+    width: 85vw;
+    margin: auto;
+    background-color: lightcoral;
+}
 
+article > p, ul, li {
+    font-family: 'Roboto';
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+div#jogando {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 0.85em;
+    background-color: lightgray;
+}
+
+li {
+    list-style-type: none ;
+}
 
 
 
