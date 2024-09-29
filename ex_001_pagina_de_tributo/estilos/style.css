@@ -48,9 +48,12 @@ img#pantera {
 
 p {
     font-family: 'Roboto';
-    line-height: 25px;
     padding-top: 10px;
     font-size: 0.95em;
+}
+
+section > p {
+    line-height: 25px;
 }
 
 h2 {
