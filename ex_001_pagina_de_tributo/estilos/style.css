@@ -36,7 +36,7 @@ main > h1 {
     font-family: 'Kanit';
     text-align: center;
     margin-bottom: 15px;
-    padding: 25px 0px;
+    padding: 10px 0px;
 }
 
 main > p {
@@ -78,17 +78,30 @@ section > h2 {
     text-align: center;
     border-radius: 15px 15px 0px 0px;
 }
-
+ 
 article, img#no_timao {
     width: 85vw;
     margin: auto;
-    background-color: lightcoral;
+    background-color: rgba(240, 128, 128, 0.616);
 }
 
-article > p, ul, li {
+article {
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+article > ul, li {
     font-family: 'Roboto';
     line-height: 20px;
     margin-bottom: 10px;
+}
+
+article > h2 {
+    padding: 7px;
+    font-weight: bolder;
+    font-size: 1.4em;
 }
 
 div#jogando {
@@ -100,6 +113,16 @@ div#jogando {
 
 li {
     list-style-type: none ;
+}
+
+footer {
+    margin-top: 20px;
+    width: 98vw;
+    margin: auto;
+    background-color: rgba(94, 93, 93, 0.767);
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 15px 15px 0px 0px;
 }
 
 
