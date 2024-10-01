@@ -5,13 +5,18 @@
 
 
 @media screen and (max-width: 340px)  {
+
+        main {
+            padding: 0px; /* descobrir o motivo de não conseguir zerar esse padding */
+        }
+
         main > h1 {
             font-size: 1.4em;
             padding: 0px;
         }
 
-        main {
-            padding: 0px; /* descobrir o motivo de não conseguir zerar esse padding */
+        main > p {
+            width: 225px;
         }
 
         h2 {
@@ -28,10 +33,15 @@
 
     }
 
-@media screen and (min-width: 340px) and (max-width: 600px) {
+@media screen and (min-width: 340px) and (max-width: 580px) {
+
     main > h1 {
-        font-size: 1.7em;
+        font-size: 1.8em;
         padding: 0px;
+    }
+
+    main > p, img#bandana {
+        width: 255px;
     }
 
     h2 {
@@ -41,7 +51,47 @@
     section > p {
         font-size: 1.1em;
     }
+}
 
+@media screen and (min-width: 580px) and (max-width: 750px) {
+
+    #bandana, main > p {
+        width: 300px;
+        font-size: 1em;
+    }
+
+    main > h1 {
+    font-size: 2.4em;
+    padding: 0px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    section > p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #bandana, main > p {
+        width: 330px;
+        font-size: 1.1em;
+    }
+
+    main > h1 {
+    font-size: 2.6em;
+    padding: 0px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    section > p {
+        font-size: 1.6em;
+    }
 }
 
 * {
@@ -92,9 +142,7 @@ main > h1 {
 main > p {
     margin: auto;
     margin-bottom: 15px;
-    width: 225px;
     text-align: center;
-    font-size: 0.75em;
     color: rgba(0, 0, 0, 0.842);
     background-color: rgb(190, 190, 190);
     border-radius: 0px 0px 15px 15px;
@@ -169,13 +217,14 @@ li {
 a#wikipedia {
     text-decoration: none;
     font-family: 'Roboto';
+    font-weight: bold;
     font-size: 1.1em;
-    color: rgba(0, 0, 0, 0.774);
+    color: rgba(10, 18, 133, 0.767);
     text-shadow: 1px 1px 3px white;
 }
 
 a#wikipedia:hover {
-    font-size: 1.2em;
+    font-size: 1.12em;
 }
 
 p#p_wiki {
