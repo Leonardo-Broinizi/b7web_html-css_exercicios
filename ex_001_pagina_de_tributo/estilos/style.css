@@ -37,6 +37,14 @@
             font-size: 1.1em;
         }
 
+        footer {
+            font-size: 1em;
+        }
+
+        footer > div.icones > a > img {
+            height: 27px;
+            width: 27px;
+        }
     }
 
 @media screen and (min-width: 340px) and (max-width: 580px) {
@@ -67,16 +75,21 @@
     }
 
     a#wikipedia {
-        font-size: 1.25em; 
+        font-size: 1.15em; 
     }
 
     a#wikipedia:hover {
-        font-size: 1.2em; /* Nesta media query a lógica do hover foi invertida, com o tamanho diminuindo com o passar do clique. Preciso ver qual gosto mais para escolher um estilo*/
+        font-size: 1.2em; 
     }
 
     footer {
         padding: 10px 0px 5px 0px;
-        font-size: 1.3em; /* Aqui eu coloquei um tamanho da fonte maior do que a dos textos do article, diferente das outras media queries. Preciso escolher qual usar (acho que vou alterar os outros também */
+        font-size: 1.2em; /* Aqui eu coloquei um tamanho da fonte maior do que a dos textos do article, diferente das outras media queries. Preciso escolher qual usar (acho que vou alterar os outros também */
+    }
+
+    footer > div.icones > a > img {
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -117,6 +130,12 @@
 
     footer {
         padding: 20px 0px 10px 0px;
+        font-size: 1.35em;
+    }
+
+    footer > div.icones > a > img {
+        height: 35px;
+        width: 35px;
     }
 }
 
@@ -156,7 +175,13 @@
     }
 
     footer {
-        padding: 30px 0px 10px 0px;
+        padding: 30px 0px 20px 0px;
+        font-size: 1.5em;
+    }
+
+    footer > div.icones > a > img {
+        height: 40px;
+        width: 40px;
     }
 }
 
@@ -303,8 +328,6 @@ footer > img {
 }
 
 footer > div.icones > a > img {
-    height: 27px;
-    width: 27px;
     border-radius: 50%;
     vertical-align: sub;
     border: 1px solid gray;
