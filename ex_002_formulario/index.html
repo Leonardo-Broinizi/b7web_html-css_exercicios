@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <form action="#" method="get" autocomplete="on">
+        <fieldset id="dados">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome Completo" minlength="8" maxlength="40" required>
+            </p>
+
+            <p>
+                <label for="irg">RG:</label>
+                <input type="number" name="rg" placeholder="xx.xxx.xxx-x" id="irg" min="100000000" max="999999999" required>
+            </p>
+
+            <p>
+                <label for="icpf">CPF:</label>
+                <input type="number" name="cpf" placeholder="xxx.xxx.xxx-xx" id="icpf" min="10000000000" max="99999999999" size="1" required>
+            </p>
+
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx" size="9">
+            </p>
+
+            <p>
+                <label for="icel">Celular:</label>
+                <input type="tel" name="cel" id="icel" placeholder="(xx) xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" size="9" required>
+            </p>
+        </fieldset>
+
+        <fieldset id="endereco">
+            <legend>Endereço</legend>
+            <p>
+                <label for="ilogra">Logradouro: </label>
+                <input type="text" name="logra" id="ilogra" placeholder="Rua, Av, Trav, Apto." size="13" required>
+            </p>
+
+            <p>
+                <label for="inum">Número: </label>
+                <input type="number" name="num" id="inum" required>
+            </p>
+
+            <p>
+                <label for="ibai">Bairro:</label>
+                <input type="text" name="bai" id="ibai" placeholder="Jardim, Centro, Etc." required>
+            </p>
+
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest" required>
+                    <optgroup label="Estados">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="icid">Cidade: </label>
+                <input type="text" name="cid" id="icid" size="8" required>
+            </p>
+
+            <p>
+                <label for="icep">CEP: </label>
+                <input type="text" name="cep" id="icep" size="5" required>
+            </p>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <legend>Mensagem</legend>
+
+            <p>
+                <label for="imen">Solicite seu orçamento: </label><br>
+                <textarea name="men" id="imen" placeholder="  Digite aqui  sua mensagem" minlength="20"  required></textarea>
+            </p>
+        </fieldset>
+
+        <p id="ienviar">
+            <input type="submit" name="enviar"  value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
