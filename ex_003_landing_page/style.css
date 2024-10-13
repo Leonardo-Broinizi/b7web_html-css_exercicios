@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: gray;
+}
+
+header > div > p {
+    /* margin: 0px 40px; */
+    margin: 0% 5%;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+main {
+    background-color: lightseagreen ;
+}
+
+main > section#a {
+    display: flex;
+    margin: auto;
+    padding: 5vw 5vw;
+    min-width: 600px;
+    max-width:800px ;
+}
+
+main > section#a > div#texto_a {
+    color: white;
+    margin: 0px 10px;
+}
+
+main > section#a > div#texto_a > h1 {
+    margin-bottom: 10px;
+}
+
+main > section#a > div#texto_a > p {
+    line-height: 25px;
+}
+
+main > section > div#texto_a > div#car {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(70, 128, 70);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0px ;
+}
+
+main > section > div#texto_a > div#car:hover {
+    background-color: rgb(45, 80, 45);
+}
+
+main > section#b { 
+    margin: auto;
+}
+
+iframe {
+    width: 300px;
+    height: 250px;
+}
