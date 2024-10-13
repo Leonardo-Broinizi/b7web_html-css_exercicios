@@ -32,6 +32,11 @@ main > section#a {
     max-width:800px ;
 }
 
+iframe {
+    width: 300px;
+    height: 250px;
+}
+
 main > section#a > div#texto_a {
     color: white;
     margin: 0px 10px;
@@ -59,10 +64,24 @@ main > section > div#texto_a > div#car:hover {
 }
 
 main > section#b { 
+    text-align: center;
     margin: auto;
+    background-color: white;
+    line-height: 25px;
 }
 
-iframe {
-    width: 300px;
-    height: 250px;
+article {
+    display: flex;
+}
+
+section#b > h1 {
+    padding:  20px 0px 10px 0px;
+}
+
+section#b > p {
+    padding-bottom: 15px;
+}
+
+article {
+    margin-bottom: 30px;
 }
