@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.85em;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+header > a:hover {
+    text-decoration: underline;
+}
+
+header > p {
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bolder;
+    width:25px;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+header > p:hover {
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+header > img {
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+main {
+    display: flex; 
+    flex-flow: column nowrap; 
+    flex: 0 0 auto; /* Impede que o main cresça, mantendo um tamanho fixo */
+    margin-top: -238px; /* Ajuste o valor negativo para mover o main para cima */
+    height: 250px;
+}
+
+main > input, main > img {
+    display: block;
+    margin: auto;
+}
+
+#ipesq {
+    padding: 15px;
+    width: 88vw;
+    max-width: 550px;
+    border-radius: 30px;
+    border: 1px solid #0000002a;
+}
+
+#ipesq:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+
+main > div#princ_bot {
+    text-align: center;
+}
+
+main > div#princ_bot > input#bot_pes, main > div#princ_bot > input#sorte {
+    font-size: 0.85em;
+    background-color: #F8F9FA;
+    color: rgba(0, 0, 0, 0.767);
+    
+    
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+main > div#princ_bot > input#bot_pes:hover, main > div#princ_bot > input#sorte:hover {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+footer {
+    background-color: #F2F2F2;
+}
+
+footer > p {
+    padding: 15px 10px 10px 30px;
+    font-size: 0.95em;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+footer > div#rodape {
+    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.199);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer > div#rodape > a, footer > div > p {
+    margin-top: 15px;
+    max-width: 90vw;
+    background-color: #F2F2F2;
+    text-decoration: none;
+    color: black;
+    margin: 15px 20px;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+footer > div#rodape > a:hover, footer > div#rodape > p:hover {
+    text-decoration: underline;
+}
+
+footer > div#rodape > p {
+    cursor: pointer;
+    display: inline;
+}
