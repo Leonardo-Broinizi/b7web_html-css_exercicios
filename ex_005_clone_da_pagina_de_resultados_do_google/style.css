@@ -19,7 +19,7 @@ header {
 
 header > input {
     flex: 1 1 150px;
-    max-width: 500px;
+    max-width: 600px;
     margin: 10px auto 10px 0px; 
     border-radius: 25px;
     padding: 10px;
@@ -33,7 +33,6 @@ header >  img#logo, header > div#sup-left {
 header > div {
     display: flex;
     align-items: center;
-    border: 1px solid black;
 }
 
 header > div > input {
@@ -56,3 +55,54 @@ header > div > p:hover {
 img#foto {
     border-radius: 50%;
 }
+
+main > div#menu, main > p, main > div#sugestoes {
+    margin-left: 20vw;
+    max-width: 650px;
+}
+
+main > div#menu {
+    display: flex;
+}
+
+main > div#menu > p {
+    padding: 10px;
+}
+
+main > div > p#todas {
+    box-shadow: 0px 2px 0px blue;
+    margin-left: -10px;
+    color: blue;
+}
+
+main > div#linha {
+    padding: 7px;
+    box-shadow: 0px -1px 0px rgba(128, 128, 128, 0.589);
+}
+
+main > p#quant_res {
+    font-size: 0.9em;
+    color: rgb(80, 80, 80);
+    margin-bottom: 10px;
+    margin-left: 19.5vw;
+}
+
+p.titulo {
+    color: rgb(78, 0, 151);
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+p.url {
+    color: green;
+    margin-bottom: 2px;
+}
+
+p.previa {
+    color: rgb(44, 44, 44);
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+
+
