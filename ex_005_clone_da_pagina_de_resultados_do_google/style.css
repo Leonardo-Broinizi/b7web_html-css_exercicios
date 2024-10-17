@@ -15,6 +15,9 @@ header {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 header > input {
@@ -28,6 +31,7 @@ header > input {
 
 header >  img#logo, header > div#sup-left {
     margin: 22px 28px;
+    cursor: pointer;
 }
 
 header > div {
@@ -45,6 +49,7 @@ header > div > p {
     font-weight: bolder;
     padding: 16px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 header > div > p:hover {
@@ -54,9 +59,14 @@ header > div > p:hover {
 
 img#foto {
     border-radius: 50%;
+    cursor: pointer;
 }
 
-main > div#menu, main > p, main > div#sugestoes, div#rodape_a, div#rodape_b {
+main {
+    padding-top: 100px;
+}
+
+main > div#menu, main > p {
     margin-left: 20vw;
     max-width: 650px;
 }
@@ -67,17 +77,19 @@ main > div#menu {
 
 main > div#menu > p {
     padding: 10px;
+    cursor: pointer;
 }
 
 main > div > p#todas {
     box-shadow: 0px 2px 0px blue;
     margin-left: -10px;
     color: blue;
+    cursor: pointer;
 }
 
 main > div#linha {
     padding: 7px;
-    box-shadow: 0px -1px 0px rgba(128, 128, 128, 0.589);
+    box-shadow: 0px -1px 2px rgba(128, 128, 128, 0.555);
 }
 
 main > p#quant_res {
@@ -91,17 +103,20 @@ p.titulo {
     color: rgb(0, 23, 151);
     font-size: 1.2em;
     margin-bottom: 3px;
+    cursor: pointer;
 }
 
 p.titulo_click {
     color: rgb(54, 2, 102);
     font-size: 1.2em;
     margin-bottom: 3px;
+    cursor: pointer;
 }
 
 p.url {
     color: green;
     margin-bottom: 2px;
+    cursor: pointer;
 }
 
 p.previa {
@@ -117,6 +132,7 @@ p#aviso_relacionado {
 }
 
 div#sugestoes {
+    margin-left: 20vw;
     display: flex;
     color: rgb(0, 23, 151);
     font-weight: bold;
@@ -124,6 +140,8 @@ div#sugestoes {
 
 div#sugestoes > div > p {
     padding: 0px 50px 10px 0px;
+    min-width: 250px;
+    cursor: pointer;
 }
 
 div#google_fake {
@@ -154,22 +172,73 @@ p#seta {
     padding-left: 10px;
     font-size: 0.8em;
     color: blue;
+    cursor: pointer;
+}
+
+div#contagem > div {
+    display: flex;
+    color:blue;
 }
 
 div#contagem {
     display: flex;
     justify-content: center;
-    color: blue;
 }
 
-div#contagem > p {
+div#contagem > div > p {
     padding: 0px 7px ;
+    cursor: pointer;
 }
 
 p#um {
     color: black;
+    cursor: text;
 }
 
 p#mais {
-    margin-left: px;
+    margin-right: -35px;
+    margin-left: 80px;
+    color: blue;
+    cursor: pointer;
+}
+
+div#contagem > div > p:hover, p#mais:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgba(211, 211, 211, 0.514);
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: bolder;
+}
+
+footer > div > div > strong {
+    color: black;
+}
+
+div.linhas_de_baixo {
+    box-shadow: 0px -1px 2px rgba(109, 109, 109, 0.603);
+    padding: 1px;
+}
+
+div#rodape_a, div#rodape_b {
+    margin-left: 20vw;
+    min-width: 900px;
+}
+
+div#rodape_a {
+    display: flex;
+}
+
+div#rodape_b {
+    display: flex;
+}
+
+div#br, div#cep, div#rodape_b > p {
+    padding: 15px;
+}
+
+div#cep, div#rodape_b, div#cep > strong {
+    cursor: pointer;
 }
