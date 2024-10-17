@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+input, a {
+    display: block;
+}
+
+a[href^="https:"] {  /* Esse sinal ^ faz com que sejam procurados elementos que comecem com os caracteres indicados. */
+    background-color: orange;
+}
+
+a[href^="http:"] {
+    background-color: grey;
+}
+
+[required] { /* Para selecionar elementos pelo atributo, basta colocar o nome do atributo entre colchetes. Podemos também combinar com outros seletores, como: input[required] "selecionará apenas os inputs com o atributo required". */
+    background-color: blue;
+}
+
+input[name="senha"] { /* Aqui é preciso usar aspas pois o valor não é padrão */
+    background-color: yellow;
+}
+
+a[href*="economia"] { /* Aqui, com o asterisco antes do sinal de igual, eu seleciono sequencias de letras que estejam dentro do atributo selecionado para usar como seletor. */
+    background-color: red;
+}
+
+a[href*="futebol"] {
+    background-color: green;
+}
+
+a[href$="o.ghtml"] { /* Esse símbolo $ faz com que a pesquisa pelos caracteres que serão usados como seletor se dê pelo final */
+    background-color: darkmagenta;
+}

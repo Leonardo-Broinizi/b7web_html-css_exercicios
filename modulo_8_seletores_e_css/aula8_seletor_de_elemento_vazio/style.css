@@ -1,0 +1,9 @@
+div {
+    margin: 20px;
+    height: 30px;
+}
+
+div:empty { /* Esse é a maneira de selecionar ítens sem conteúdo. */
+    /* background-color: red; */
+    display: none;
+}

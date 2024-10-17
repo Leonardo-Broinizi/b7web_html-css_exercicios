@@ -1,0 +1,10 @@
+/* Com :: tratamos do conteúdo do elemento, e não do elemento em sí. */
+
+p::first-letter { /* Aqui selecionamos a primeira letra. */ 
+    font-size:25px;
+    font-weight: bold;
+}
+
+p::first-line { /* Aqui selecionamos a primeira linha */
+    color: red;
+}
