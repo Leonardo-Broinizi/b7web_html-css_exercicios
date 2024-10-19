@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(3) { /* Muito interessante. Nesse exemplo, apenas a terceira div será selecionada. */
+           background-color: red;
+        } 
+
+        div:nth-last-child(2) { /* Por algum motivo, a div selecionada aqui é a 5ª (primeira de baixo para cima) e não a 4ª, como no caso do professor. */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>Texto 1</div>
+    <div>Texto 2</div>
+    <div>Texto 3</div>
+    <div>Texto 4</div>
+    <div>Texto 5</div>
+</body>
+</html>

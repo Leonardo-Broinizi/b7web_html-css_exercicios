@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.balao {
+            background-color: blue;
+            display: inline-block;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        div.balao::after {
+            content: "";
+            
+            display: block;
+            position: absolute;
+            margin-top: 20px;
+
+            border: 20px solid;
+            border-color: #00F transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="balao">Olá, tudo bem?<br>Como vai?</div>
+</body>
+</html>

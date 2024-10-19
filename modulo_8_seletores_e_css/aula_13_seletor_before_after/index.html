@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        span::before {
+            content:"-> ";
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        span::after {
+            content: "<-";
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        div::before {
+            content: "";
+            display:inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+
+        div {
+            padding: 20px;
+            background-color: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <span>Texto 1</span>
+
+    <span>Texto 2</span>
+    <div>Texto div</div>
+
+</body>
+</html> 
