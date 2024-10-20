@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização do Placeholder</title>
+    <style>
+        input[type="text"] { /* Decidi selecionar pelo atributo como o professor Bonieky ensinou algumas aulas atrás para praticar. */
+            font-size: 27px;
+            width: 400px;
+            height: 50px;
+        }
+
+        input[type="text"]::placeholder { /* Esse seletor de placeholder funciona em todos os navegadores modernos */
+            color: #0f0;
+        }
+
+        /* Agora o professor vai ensinar formas expecíficas de estilizar o placeholber para cada navegador diferente, caso se queira que o efeito seja diferente de acordo com o navegador. */
+        
+        input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge  */
+            background-color: red;
+        }
+
+        input[type="text"]:-moz-placeholder { /* Firefox 4 ao 18 */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type="text"]::-moz-placeholder { /* Firefox 19 em diante */
+            color: #0f0;
+        }
+
+        input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10 e 11 */
+            color: #f0f;
+        }
+
+        input[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
+            color: #ff0;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" name="usuario" placeholder="Digite seu usurário">
+</body>
+</html>

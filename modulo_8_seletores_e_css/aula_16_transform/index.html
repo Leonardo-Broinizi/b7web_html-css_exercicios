@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div {
+            margin: auto;
+            margin-top: 50px;
+            width: 150px;
+            height:150px;
+            background-color: #ff0000;
+        }
+        div#um {
+            transform: scale(2, 0.5); /* O scale do transform pode ser no eixo X (horizontal), Y (vertical) ou sem expecificações, onde o valor será aplicado nos dois eixos ou pode-se colocar dois valores, o primeiro para o eixo horizontal e o segundo para o eixo vertical.*/
+        }
+        
+        div#dois {
+            background-color: #00ff00;
+            transform: rotate(50deg); /* O rotate do transform fará com que o elemento rotacione pelo número de graus especificado, sempre no sentido horário (para rotacionar no sentido anti-horário basta colocar o valor de graus negativo). */
+        } 
+
+        div#tres {
+            background-color: yellow;
+            position: fixed;
+            right: -50px;
+            bottom: 50px;
+
+            height: 100px;
+            width: 200px;
+            transform: rotate(90deg);
+        }
+
+        div#quatro {
+            transform: skew(20deg,30deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="um">Texto 1</div>
+    <div id="dois">Texto 2</div>
+    <div id="tres">Texto 3</div>
+    <div id="quatro">Texto 4</div>
+</body>
+</html>
