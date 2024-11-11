@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:  repeat(auto-fill, 100px); 
+            
+            /* grid-template-columns: repeat(2, 1fr 2fr); */
+            /* o repeat multiplica o número de colunas que estiverem indicadas pelo tamanho no segundo valor (nesse exemplo, duas colunas, uma com o tamanho de 1fr e outra com o tamanho de 2fr) pelo número informado no primeiro valor (nesse caso, três, resultando em 6 colunas, três pares de uma com 1fr e uma com 2fr) */ 
+
+            /* Dica: o valor 'auto' para definir automaticamente a largura de uma coluna não considera o gap (o valor de espaçamento como definido no código abaixo), já os fr consideram */
+            grid-gap: 10px;
+        }
+
+        .item {
+            background-color: #00f;
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+</body>
+</html>
